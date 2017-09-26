@@ -1,0 +1,38 @@
+h1{margin:0;font-weight:normal;font-size:16px;}
+.header{width:1280px;height:280px;background-color:#ffffff;padding-top:20px;margin:0 auto;}
+.logo{display:block;margin-left:auto;margin-right:auto;}
+.header .righttop{position:absolute;top:10px;right:10px;}
+.register,.login{float:left;margin:0 15px;cursor:pointer;}
+.register a:hover{color:#882635;}
+.login a:hover{color:#882635;}
+.nav a{color:#292929;font-size:14px;margin:10px 70px;padding-bottom:10px;}
+.nav{margin-top:60px;width:1496px;margin-left:auto;margin-right:auto;}
+.header h1{text-align:center;color:#480100;font-size:48px;margin-top:20px;}
+.nav li{float:left;}
+.clearfix{clear:both;}
+.active{border-bottom:3px solid #292929;color:#882635;}
+.news{width:1000px;margin:0 auto;margin-top:15px;position:relative;}
+.news h1{font-size:36px;text-align:center;}
+.news .title p{text-align:center;}
+.news .news01{float:left;margin:0 5px;}
+.news .news01 img{width:320px;}
+.news h2{margin-top:15px;font-weight:normal;font-size:18px;}
+.news p{font-size:14px;}
+.arrowleft{position:absolute;top:300px;left:-100px;}
+.arrowright{position:absolute;top:300px;right:-100px;}
+.message{width:1200px;margin:0 auto;}
+.message h1{font-size:30px;text-align:center;}
+.message p{text-align:center;}
+.message img{float:left;}
+.backtop{width:300px;margin:0 auto;}
+.backtop02{margin-top:20px;margin-left:124px;}
+.backtop h2{margin-left:60px;}
+.footer_box{background-color:#000000;height:200px;margin-top:60px;}
+.footer{color:#ffffff;}
+.footer{width:1200px;margin:0 auto;padding-top:5px;padding-bottom:35px;}
+.footer .nav li{float:left;border-right:1px solid #e2e7ed;line-height:14px;}
+.footer .nav a{color:#ffffff;}
+.footer .nav a:hover{color:#8e2333;}
+.footer .nav{margin-bottom:13px;}
+.footer h3{margin-bottom:10px;color:#ffffff;font-size:14px;margin-top:40px;}
+.footer h4{color:#ffffff;font-size:14px;}

@@ -1,0 +1,49 @@
+﻿SET NAMES 'utf8';
+
+DROP DATABASE IF EXISTS ptj;
+
+CREATE DATABASE ptj CHARSET=UTF8;
+
+USE ptj;
+CREATE TABLE ptj_pdu(
+ pid   INT PRIMARY KEY AUTO_INCREMENT,
+ pname VARCHAR(200),
+ rprice DECIMAL(10,2),
+ price DECIMAL(10,2),
+ pic   VARCHAR(100)
+);
+set names gbk;
+INSERT INTO ptj_pdu VALUES
+(1,'85年份珍藏华夏长城干红',2830,2280,'img/product02.png'),
+(2,'92年份华夏长城干红',2491,1908,'img/product01.png'),
+(3,'95年份华夏长城珍藏干红',1274,708,'img/product03.png'),
+(4,'96年份华夏长城干红',785,480,'img/product04.png'),
+(5,'97年份华夏长城干红',642,398,'img/product05.png'),
+(6,'霞多丽干白葡萄酒',1690,1208,'img/product06.png'),
+(7,'烟台长城经典红色庄园',983,777,'img/product07.png'),
+(8,'烟台长城金色庄园',2118,1996,'img/product08.png'),
+(9,'烟台长城红色庄园',571,346,'img/product09.png'),
+(10,'烟台长城高级解百纳',816,655,'img/product10.png'),
+(11,'王朝特制解百纳',618,408,'img/product11.png'),
+(12,'王朝2002木盒',741,468,'img/product12.png'),
+(13,'王朝1998木盒',916,754,'img/product13.png'),
+(14,'王朝1996木盒',491,336,'img/product14.png'),
+(15,'烟台长城高级解百纳',819,655,'img/product15.png'),
+(16,'长城一星干红',1314,608,'img/product16.png'),
+(17,'长城二星干红',888,666,'img/product17.png'),
+(18,'长城三星干红',1421,954,'img/product18.png'),
+(19,'长城四星干红',821,636,'img/product19.png'),
+(20,'长城五星干红',1536,985,'img/product20.png');
+CREATE TABLE ptj_cart(
+ cid   INT PRIMARY KEY AUTO_INCREMENT,
+  pid   INT,
+  uid   INT,
+  count INT
+);
+CREATE TABLE user(
+ uid   INT PRIMARY KEY AUTO_INCREMENT,
+  uname   VARCHAR(50),
+  upwd   VARCHAR(64),
+  uphone BIGINT,
+  uattr VARCHAR(300)	
+);

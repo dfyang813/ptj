@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link/>
+  <title></title>
+  <style>
+    .main {
+      position: relative;
+    }
+    .bg-video {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+    }
+    .box {
+      width: 600px;
+      min-height: 400px;
+      background: rgba(255,255,255, .7);
+      border-radius: 5px;
+      margin: 100px auto;
+      padding: 1.5em;
+    }
+    #tip{
+        margin:0;padding:0;
+        line-height:30px;
+        font-size:14px;
+        color:red;
+        font-weight:normal;
+    }
+  </style>
+</head>
+<body>
+<!--头部-->
+<div class="container">
+  <h3>用户登录</h3>
+</div>
+<!--主体-->
+<div class="container main">
+  <video class="bg-video" src="res/snow.mp4" autoplay loop muted></video>
+  <div class="box">
+      <h3 id="tip">&nbsp;</h3>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <div class="col-sm-2">
+          <label class="control-label" for="uname">用户名：</label>
+        </div>
+        <div class="col-sm-5">
+          <input class="form-control" id="uname" placeholder="请输入您的用户名">
+        </div>
+        <div class="col-sm-5">
+          <span class="help-block">用户名可以包含数字或字母</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-2">
+          <label class="control-label" for="upwd">密码：</label>
+        </div>
+        <div class="col-sm-5">
+          <input type="password" class="form-control" id="upwd" placeholder="请输入您的密码">
+        </div>
+        <div class="col-sm-5">
+          <span class="help-block">密码长度在6~12位之间</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-5 col-sm-offset-2">
+          <input id="bt-login" class="btn btn-success btn-block" type="button" value="登录">
+        </div>
+          <div class="col-sm-5 col-sm-offset-2">
+              还未注册用户名?<a href="register.html">去注册</a>
+          </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!--尾部-->
+<div class="container"></div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

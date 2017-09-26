@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+.add{margin-left:300px;margin-top:200px;height:30px;}
+.add i{width:30px;height:30px;margin-right:10px;display:block;
+    background:url("img/correct.png") no-repeat center left;background-size:cover;
+}
+.add .word{font-size:18px;margin-top:5px;font-weight:bold;line-height:30px;}
+.add i,.add .word{float:left;}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+    #time{
+        color:red;
+        font-size:24px;
+        line-height:30px;
+    }
+    p{
+        margin-top:20px;
+        clear:both;
+        padding-left:10px;
+      line-height:30px;
+    }
+</style>
+</head>
+
+<body>
+<div class="add clear">
+	<!--<img src="img/correct.png">-->
+    <i></i>
+    <div class="word">已成功加入购物车</div>
+    <p>
+        <span id="time">5</span>&nbsp;
+        秒后返回首页
+        <a href="shoppingcart.html">去购物车结算</a>
+    </p>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    var n=$("#time").html();
+    var timer=setInterval(function(){
+        n--;
+        if(n==0){
+            location.href="index.html";
+            clearInterval(timer);
+        }
+        $("#time").html(n);
+    },1000)
+</script>
+</body>
+</html>

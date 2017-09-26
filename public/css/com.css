@@ -1,0 +1,30 @@
+body{margin:0;padding:0;}
+img{display:block;}
+ul{margin:0;padding:0}
+li{list-style:none;}
+a{text-decoration:none;}
+.hmain{
+    width:1200px;
+    margin:0 auto;
+}
+#login{
+    float:right;
+    margin-bottom:20px;
+    font-size:14px;
+    margin-right:150px;
+}
+#login>li {
+    float: left;
+    margin-right: 10px;
+}
+#login>li>a{
+    color:black;
+}
+#login>li>a:hover{
+    color:#882635;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}

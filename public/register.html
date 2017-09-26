@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <title></title>
+  <link>
+  <style>
+    .main {
+      position: relative;
+    }
+    .bg-video {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+    }
+    .box {
+      width: 600px;
+      min-height: 400px;
+      background: rgba(255,255,255, .7);
+      border-radius: 5px;
+      margin: 100px auto;
+      padding: 1.5em;
+    }
+      #tip{
+          margin:0;padding:0;
+          line-height:20px;
+          font-size:14px;
+          color:red;
+          font-weight:normal;
+      }
+  </style>
+</head>
+<body>
+  <!--头部-->
+  <div class="container">
+    <h3>欢迎注册</h3>
+  </div>
+  <!--主体-->
+  <div class="container main">
+    <video class="bg-video" src="res/snow.mp4" autoplay loop muted></video>
+    <div class="box">
+        <h3 id="tip">&nbsp;</h3>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <div class="col-sm-3">
+            <label class="control-label" for="uname">用户名：</label>
+          </div>
+          <div class="col-sm-4">
+            <input class="form-control" id="uname" placeholder="请输入您想注册的用户名">
+          </div>
+          <div class="col-sm-5">
+            <span id="test" class="help-block">用户名可以包含数字或字母</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-3">
+            <label class="control-label" for="upwd">密码：</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="password" class="form-control" id="upwd" placeholder="请输入您想注册的密码">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block">密码长度在6~12位之间</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-3">
+            <label class="control-label" for="umail">确认密码：</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="password" class="form-control" id="umail" placeholder="请重新输入密码">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block" id="rpwd" style="color:red"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-3">
+            <label class="control-label" for="phone">联系方式：</label>
+          </div>
+          <div class="col-sm-4">
+            <input class="form-control" type="text" id="phone" placeholder="请输入您的联系方式">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block" id="pmsg" style="color:red"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-3">
+            <label class="control-label" for="attr">地址：</label>
+          </div>
+          <div class="col-sm-4">
+            <input class="form-control" id="attr" placeholder="请输入您的地址">
+          </div>
+          <div class="col-sm-5">
+            <span class="help-block"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-5 col-sm-offset-2">
+            <input id="bt-register" class="btn btn-success btn-block" type="button" value="注册">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--尾部-->
+  <div class="container"></div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>
